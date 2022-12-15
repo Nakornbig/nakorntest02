@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<head>
+
+	<style>
+		table {
+		  border-collapse: collapse;
+		  width: 135%;
+		}
+	  
+		th, td {
+		  text-align: left;
+		  padding: 8px;
+		  border-bottom: 1px solid #ddd;
+		}
+		th {
+			height: 40px;
+		}
+	  
+		tr:nth-child(even) {background-color: #f2f2f2;}
+	  </style>
+
+	<title id="su_ka1">MarketingGames</title>
+
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="https://www.gamesrig.com/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="https://www.gamesrig.com/css/util.css">
+<link rel="stylesheet" type="text/css" href="https://www.gamesrig.com/css/main.css">
+<link rel="stylesheet" type="text/css" href="https://www.gamesrig.com/css/css.css">
+<!--===============================================================================================-->
+<script src="https://www.gamesrig.com/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="https://www.gamesrig.com/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+			
+			<script src="https://www.gamesrig.com/js/client_platform.js"></script>
+			
+			<meta name="google-signin-client_id" content="593547713922-kd9f9c74unt6gjgneet1qkrs7su81q2j.apps.googleusercontent.com">
+            
+			<style>
+				body {
+                                    background-image: url("https://www.gamesrig.com/img/index/gamesrig-background-marvels-avengers-fifa-21.jpg");
+                					background-color: #f0f1f5;
+				}
+			</style>
+	<style>
+		.how-to-order {
+			padding-top: 5px;
+		}
+		.how-to-order > p {
+			margin: 10px 0;
+		}
+		.how-to-order > p > img {
+			max-width: 100%;
+		}
+		.how-to-order > img {
+			max-width: 100%;
+		}
+		.nav-tabs {
+			border-bottom: 2px solid #0d89ff;
+		}
+		.nav-tabs .nav-link:hover  {
+			border-color: #0d89ff;
+			background-color: #f7f7f7;
+			text-decoration: underline;
+		}
+		.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+			color: white;
+			background-color: #0d89ff;
+			border-color: #0d89ff;
+		}
+		.nav-tabs .nav-link {
+			border: 1px solid #0d89ff;
+			margin-right: 3px;
+		}
+	</style>
+
+</head>
+
+<body class="xhidden">
+
+	<div class="d-none d-lg-block" style=" position: -webkit-sticky;  position: sticky; top: 0; z-index: 3;">
+		<nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center" style="background-color: #282F37;height: 80px;">
+			<a class="navbar-brand d-flex w-50 mr-auto d-block d-sm-none">Marketing Games</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="container">
+				<div class="navbar-collapse collapse w-10" id="collapsingNavbar3">
+					<a class="nav navbar-nav justify-content-end">
+						<p style="color:white; font-size:38px;" >Marketing Games</p>
+						&nbsp;</a>
+	
+							<ul class="nav navbar-nav ml-auto w-50 justify-content-end">
+									<li class="nav-item navtext">
+										<a class="nav-link navtext texttopnav" style="cursor: pointer;" data-toggle="modal" data-target="#Modallogin"><i aria-hidden="true"></i>เข้าสู่ระบบ &nbsp;&nbsp;</a>
+									</li>
+			
+							</ul>
+	
+						</div>
+					</div>
+				</nav>
+			</div>
+
+
+		<div class="d-none d-lg-block">
+			<nav class="navbar navbar-expand-lg navbar-light margin0rem" style="background-color: #06a3fd;">
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+					class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="container" style="padding: 0px;">
+					<div class="collapse navbar-collapse">
+
+						<ul class="navbar-nav mx-auto">
+
+							<li class="nav-item navtext" >
+								<a class="nav-link hovernavpc navpadding" href="/" style="color: white;">เกมส์</a>
+							</li>
+
+							<li class="nav-item navtext" >
+								<a class="nav-link hovernavpc navpadding" href="topuser" style="color: white;">ผู้ใช้งาน</a>
+							</li>
+
+							<li class="nav-item navtext" style="background-color: #02589d;">
+								<a class="nav-link hovernavpc navpadding" href="checkorders" style="color: white;">ตรวจสอบออเดอร์</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<form id="ChkLogin_C" action = "{{ url_for('adminlogin') }}" method="POST">
+				<h1>&nbsp;</h1>
+				<h1 class="msg" style="text-align:center; color:red;">{{ msg }}</h1>
+				<h1 class="msg" style="text-align:center; color:red;">{{ msg2 }}</h1>
+			<div class="modal fade" id="Modallogin" tabindex="-1" role="dialog" aria-labelledby="ModalloginLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+					<div class="modal-header" style="background-color: #007bff;color: white;">
+						<div class="modal-title mtext-387" id="ModalloginLabel">เข้าสู่ระบบ</div>
+					</div>
+
+
+    			<div class="modal-body">
+    					<div class="bor8 m-t-10">
+    						<input class="stext-112 cl5 plh3 size-116 p-lr-18" type="username" name="username" placeholder="Username" value="admin">
+    					</div>
+    					<div class="bor8 m-t-20">
+    						<input class="stext-112 cl5 plh3 size-116 p-lr-18" type="Password" name="password" placeholder="Password" value="admin">
+						</div>
+						<div>&nbsp;</div>
+						<div class="msg" style="text-align:center; color:red;">{{ msg }}</div>
+    					<div class="row m-t-10 d-flex flex-sb">
+
+    						<div class="col-lg-4 col-md-5 col-sm-6 col-6">
+    							<button type="submit" class="btn btn-primary btn-block mtext-107 fontsingin" style="font-weight: 600;">
+    								เข้าสู่ระบบ</button>
+    						</div>
+    					</div>
+    					</div>
+    			</div>
+    		</div>
+			</div>
+			</div>
+		</form>
+
+	<div class="container" id="container">
+
+		<div class="row">
+
+        </div>   
+         
+			<div class="col-lg-9 col-md-12">
+
+				<div class="row">
+
+					<div class="col-lg-12 m-t-20" style="padding-left: 7.5px;padding-right: 7.5px;">
+
+                        <h1 id="#headline" class="ltext-107">การทำรายการของลูกค้า</h1>
+						
+						<p class="m-t-15 m-b-15 mtext-107">&nbsp;</p>
+
+						
+                        <nav>
+                            <div class="nav nav-tabs" id="" role="tablist">
+                                
+                                <a class="nav-item nav-link show active" data-toggle="tab" href="#ต่อคิว" role="tab" aria-selected="true">ต่อคิว</a>
+            
+                                <a class="nav-item nav-link " data-toggle="tab" href="#มีข้อผิดพลาด" role="tab" aria-selected="false">มีข้อผิดพลาด</a>
+            
+                            </div>
+						</nav>
+						
+				<div class="tab-content" id="how-to-order-nav-content">
+					<div class="mtext-107 how-to-order tab-pane fade show active" id="ต่อคิว" role="tabpanel" aria-labelledby="bank-transfer-tab">
+						<p>&nbsp;</p><p>&nbsp;</p>
+						<table style="text-align:center" 1cellspacing="5" width="50%" height="5">
+							<thead>
+							<td>ชื่อผู้ซื้อ</td>
+							<td>ชื่อเกม</td>
+							<td>ราคา</td>
+							<td>สถานะ</td>
+							<td style="text-align:center;">วัน/เวลา
+							</td>
+							</thead>
+							{% for row in rows1 %}
+							<tr>
+								<td>{{ row['nameuser'] }}</td>
+								<td>{{ row['namegame'] }}</td>
+								<td>{{ row['price'] }}</td>
+								<td>{{ row['status_order'] }}</td>
+								<td style="text-align:center;">{{ row['timeoc'] }}</td>
+								
+							</tr>
+							{% endfor %}
+						</table>
+					</div>
+
+					<div class="mtext-107 how-to-order tab-pane fade " id="มีข้อผิดพลาด" role="tabpanel" aria-labelledby="truemoney-wallet-tab">
+						<p>&nbsp;</p><p>&nbsp;</p>
+						<table style="text-align:center" 1cellspacing="5" width="50%" height="5">
+							<p>&nbsp;&nbsp;โปรดติดต่อ admin ได้ที่ FB:123456789</p>
+							<p>&nbsp;</p>
+							<thead>
+							<td>ชื่อผู้ซื้อ</td>
+							<td>ชื่อเกม</td>
+							<td>ปัญหาที่เกิดขึ้น</td>
+							<td style="text-align:center">วัน/เวลา</td>
+							</thead>
+							{% for row in rows3 %}
+							<tr>
+								<td>{{ row['nameuser'] }}</td>
+								<td>{{ row['namegame'] }}</td>
+								<td>{{ row['notefail'] }}</td>
+								<td style="text-align:center">{{ row['timeof'] }}</td>
+							</tr>
+							{% endfor %}
+						</table>
+					</div>
+				</div>
+
+				</div> 
+
+			</div> 
+
+		</div> 
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	</div>
+</body>
+</html>
+
